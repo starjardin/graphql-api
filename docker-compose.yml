@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  postgres:
+    image: postgres:12.10
+    restart: always
+    environment:
+      - POSTGRES_USER=tantely
+      - POSTGRES_PASSWORD=admin123
+      - POSTGRES_DB=testdatabase
+
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./data:/lib/postgresql/data
