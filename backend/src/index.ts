@@ -26,3 +26,4 @@ import { UserResolver } from "./resolvers/userResolver";
   console.log(`server has started on port ${port}`);
   
 })();
+
